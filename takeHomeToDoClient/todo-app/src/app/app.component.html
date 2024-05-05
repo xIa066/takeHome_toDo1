@@ -1,42 +1,28 @@
-<h1 id="tableLabel">To Do List</h1>
-<p>This is a take-home interview test.</p>
-
-<!-- Form to add new to-do items -->
-<!--
-<div>
-  <input type="text" [(ngModel)]="newTask" placeholder="Enter new task here..." />
-  <input type="number" [(ngModel)]="newPriority" placeholder="Priority" min="1" max="5" />
-  <textarea [(ngModel)]="newDescription" placeholder="Task description"></textarea>
-  <button
-    (click)="addTodoItem(newTask, newDescription, newPriority); newTask = ''; newDescription = ''; newPriority = null;">Add
-    Task</button>
+<div class="header">
+  <h1>To Do List</h1>
+  <p>This is a take-home interview test.</p>
 </div>
--->
 
 <!-- Conditional rendering of to-do items -->
 <div *ngIf="toDos.length > 0; else loading">
-  <table>
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Task</th>
-        <th>Priority</th>
-        <th>Description</th>
-        <th>Completed</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of toDos">
-        <td>{{ item.id }}</td>
-        <td>{{ item.task }}</td>
-        <td>{{ item.priority }}</td>
-        <td>{{ item.description }}</td>
-        <td>
-          <input type="checkbox" [(ngModel)]="item.isComplete" (change)="toggleCompletion(item)">
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="task-container">
+    <div *ngFor="let item of toDos" class="task-card">
+      <div class="task-content">
+        <h3>Task: {{ item.task }}</h3>
+        <p>Description: {{ item.description }}</p>
+      </div>
+      <div class="task-actions">
+        <label>
+          Completed: <input type="checkbox" [(ngModel)]="item.isComplete">
+        </label>
+        <button (click)="deleteItem(item.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <p *ngIf="!toDos.length"><em>No tasks found. Add some tasks!</em></p>
+  </ng-template>
 </div>
 
 <!-- Loading or empty list fallback -->

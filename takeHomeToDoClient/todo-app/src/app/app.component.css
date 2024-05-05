@@ -1,38 +1,78 @@
-/* Style for the To-Do List header */
-#tableLabel {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    /* Example color */
-    margin-bottom: 20px;
+.header {
+    padding: 20px;
+    /* Padding for some breathing room around the text */
+    text-align: center;
+    /* Centers the text for better focus */
+    border-bottom: 2px solid #e9ecef;
+    /* A subtle border to separate from content */
 }
 
-/* Style for the paragraph */
+h1 {
+    color: #007bff;
+    /* Blue color for prominence */
+    margin-bottom: 0.5em;
+    /* Space between the title and the description */
+}
+
 p {
+    color: #6c757d;
+    /* A darker grey for the description */
+    margin-bottom: 1em;
+    /* Provides a bottom margin to separate from content below */
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Spacing between cards */
+    margin: 20px;
+}
+
+.task-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.task-content h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.task-content p {
     font-size: 16px;
     color: #666;
-    /* Example color */
-    margin-bottom: 20px;
 }
 
-/* Style for the form inputs and button */
-input[type="text"],
-input[type="number"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    /* Example border color */
-    border-radius: 5px;
+.task-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Distributes space between checkbox and button */
+}
+
+.task-actions label {
+    font-size: 16px;
+    /* Example font size */
+    color: #666;
+    /* Example font color */
+    display: flex;
+    /* Ensures label content is aligned */
+    align-items: center;
+    /* Centers the checkbox with the text vertically */
+    margin-right: 10px;
+    /* Space between the label and the button */
 }
 
 button {
-    padding: 10px 20px;
+    padding: 8px 16px;
     background-color: #007bff;
-    /* Example button color */
-    color: #fff;
-    /* Example text color */
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -40,30 +80,15 @@ button {
 
 button:hover {
     background-color: #0056b3;
-    /* Example hover color */
 }
 
-/* Style for the table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+@media (max-width: 768px) {
+    .task-container {
+        flex-direction: column;
+    }
 
-th,
-td {
-    border: 1px solid #ccc;
-    /* Example border color */
-    padding: 8px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-    /* Example header background color */
-}
-
-/* Style for the loading message */
-p em {
-    color: #999;
-    /* Example color */
+    .task-actions {
+        margin-top: 10px;
+        /* Extra space on mobile */
+    }
 }
