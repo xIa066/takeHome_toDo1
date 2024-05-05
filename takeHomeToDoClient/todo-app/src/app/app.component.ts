@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Component, Inject, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, Inject, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 interface WeatherForecast {
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit {
   public forecasts: WeatherForecast[] = [];
   public toDos: ToDo[] = [];
 
-  constructor(private http: HttpClient, @Inject('BASE_API_URL') private baseUrl: string) { }
+  constructor(private http: HttpClient, @Inject('BASE_API_URL') private baseUrl: string, private cdr: ChangeDetectorRef) { }
 
   ngOnInit() {
     this.getTodos();
@@ -64,7 +64,14 @@ export class AppComponent implements OnInit {
     );
   }
 
-  toggleCompletion(item: ToDo) {
-    item.isComplete = !item.isComplete;
+  deleteItem(id: number) {
+    this.http.delete(`${this.baseUrl}/ToDos/${id}`).subscribe(
+      () => {
+        this.getTodos();
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   }
 }
