@@ -166,6 +166,26 @@ button:hover {
     /* Aligns the button to the right */
 }
 
+.no-tasks-message {
+    font-size: 25px;
+    /* Matches the general font size used in the app */
+    color: #6c757d;
+    /* A soft grey, consistent with other descriptive text */
+    text-align: center;
+    /* Centers the message */
+    margin: 20px;
+    /* Adds some spacing around the message */
+    padding: 10px;
+    /* Additional padding for better visibility */
+    background-color: #f8f9fa;
+    /* A light background to make it stand out slightly */
+    border-radius: 5px;
+    /* Soft rounded corners for aesthetic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .task-container {
         flex-direction: column;
@@ -187,5 +207,16 @@ button:hover {
     .form-group textarea {
         padding: 8px;
         /* Slightly larger padding for easier interaction */
+    }
+}
+
+@media (max-width: 768px) {
+    .no-tasks-message {
+        font-size: 14px;
+        /* Slightly smaller font size for smaller screens */
+        padding: 8px;
+        /* Slightly less padding */
+        margin: 10px;
+        /* Smaller margin to fit smaller screens */
     }
 }
