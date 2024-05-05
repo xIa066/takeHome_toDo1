@@ -29,3 +29,20 @@
 <ng-template #loading>
   <p *ngIf="!toDos.length"><em>No tasks found. Add some tasks!</em></p>
 </ng-template>
+
+<div class="add-task-form">
+  <h2>Add New Task</h2>
+  <form>
+    <div class="form-group">
+      <label for="taskName">Task Name:</label>
+      <input type="text" id="taskName" name="taskName" placeholder="Enter task name" required>
+    </div>
+    <div class="form-group">
+      <label for="taskDescription">Description:</label>
+      <textarea id="taskDescription" name="taskDescription" placeholder="Enter task description" required></textarea>
+    </div>
+    <div class="button-container">
+      <button type="submit">Add Task</button>
+    </div>
+  </form>
+</div>

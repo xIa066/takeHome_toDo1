@@ -82,6 +82,90 @@ button:hover {
     background-color: #0056b3;
 }
 
+
+.add-task-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.add-task-form h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* Ensures padding and border are included in the width/height */
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    /* Ensures the input takes the full width of its parent */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .add-task-form {
+        padding: 10px;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea {
+        padding: 8px;
+        /* Slightly reduced padding on smaller devices */
+    }
+}
+
+.form-group textarea {
+    height: 100px;
+    /* Sets a fixed height for the textarea */
+}
+
+button.formButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* Green color for the add button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    /* Makes the button block level to fill the container */
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00b7ff;
+    /* Darker green on hover */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    /* Aligns the button to the right */
+}
+
 @media (max-width: 768px) {
     .task-container {
         flex-direction: column;
@@ -90,5 +174,18 @@ button:hover {
     .task-actions {
         margin-top: 10px;
         /* Extra space on mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .add-task-form {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea {
+        padding: 8px;
+        /* Slightly larger padding for easier interaction */
     }
 }
