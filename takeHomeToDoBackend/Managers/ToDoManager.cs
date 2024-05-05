@@ -17,7 +17,15 @@ namespace takeHomeToDoBackend.Managers
 
         public static ToDo Add(ToDo todo)
         {
-            todo.Id = _todos.Max(t => t.Id) + 1;
+            if (_todos.Count == 0)
+            {
+                todo.Id = 1; // Start numbering from 1 if the list is empty
+            }
+            else
+            {
+                todo.Id = _todos.Max(t => t.Id) + 1; // Increment the maximum existing Id
+            }
+
             _todos.Add(todo);
             return todo;
         }
