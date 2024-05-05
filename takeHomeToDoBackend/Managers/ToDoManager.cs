@@ -1,14 +1,14 @@
 ﻿using takeHome_toDo.Server;
 
-namespace ToDoApi.Services
+namespace takeHomeToDoBackend.Managers
 {
     public class ToDoManager
     {
         private static List<ToDo> _todos = new List<ToDo>
         {
-            new ToDo { Id = 1, Date = DateOnly.FromDateTime(DateTime.Now), Task = "Finalize the project proposal", Description = "Compile all sections and review.", Priority = 1, Completed = false },
-            new ToDo { Id = 2, Date = DateOnly.FromDateTime(DateTime.Now.AddDays(1)), Task = "Schedule client meeting", Description = "Contact the client to arrange a meeting date.", Priority = 2, Completed = false },
-            new ToDo { Id = 3, Date = DateOnly.FromDateTime(DateTime.Now.AddDays(2)), Task = "Prepare presentation", Description = "Create slides for the presentation.", Priority = 3, Completed = false }
+            new ToDo { Id = 1, Task = "Finalize the project proposal", Description = "Compile all sections and review.", Completed = false },
+            new ToDo { Id = 2, Task = "Schedule client meeting", Description = "Contact the client to arrange a meeting date.", Completed = false },
+            new ToDo { Id = 3, Task = "Prepare presentation", Description = "Create slides for the presentation.", Completed = false }
         };
 
         public static List<ToDo> GetAll() => _todos;
