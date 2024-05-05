@@ -32,14 +32,15 @@
 
 <div class="add-task-form">
   <h2>Add New Task</h2>
-  <form>
+  <form (ngSubmit)="addTodos()">
     <div class="form-group">
       <label for="taskName">Task Name:</label>
-      <input type="text" id="taskName" name="taskName" placeholder="Enter task name" required>
+      <input type="text" id="taskName" name="taskName" [(ngModel)]="taskName" placeholder="Enter task name" required>
     </div>
     <div class="form-group">
       <label for="taskDescription">Description:</label>
-      <textarea id="taskDescription" name="taskDescription" placeholder="Enter task description" required></textarea>
+      <textarea id="taskDescription" name="taskDescription" [(ngModel)]="taskDescription"
+        placeholder="Enter task description" required></textarea>
     </div>
     <div class="button-container">
       <button type="submit">Add Task</button>
