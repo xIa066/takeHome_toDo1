@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zexi\\Development\\test\\takeHome_toDo1\\takeHomeToDoBackend\\takeHomeToDoBackend.csproj": {}
+    "C:\\Users\\Zexi\\Development\\testTakeHome1\\takeHome_toDo1\\takeHomeToDoBackend\\takeHomeToDoBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zexi\\Development\\test\\takeHome_toDo1\\takeHomeToDoBackend\\takeHomeToDoBackend.csproj": {
+    "C:\\Users\\Zexi\\Development\\testTakeHome1\\takeHome_toDo1\\takeHomeToDoBackend\\takeHomeToDoBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zexi\\Development\\test\\takeHome_toDo1\\takeHomeToDoBackend\\takeHomeToDoBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Zexi\\Development\\testTakeHome1\\takeHome_toDo1\\takeHomeToDoBackend\\takeHomeToDoBackend.csproj",
         "projectName": "takeHomeToDoBackend",
-        "projectPath": "C:\\Users\\Zexi\\Development\\test\\takeHome_toDo1\\takeHomeToDoBackend\\takeHomeToDoBackend.csproj",
+        "projectPath": "C:\\Users\\Zexi\\Development\\testTakeHome1\\takeHome_toDo1\\takeHomeToDoBackend\\takeHomeToDoBackend.csproj",
         "packagesPath": "C:\\Users\\Zexi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zexi\\Development\\test\\takeHome_toDo1\\takeHomeToDoBackend\\obj\\",
+        "outputPath": "C:\\Users\\Zexi\\Development\\testTakeHome1\\takeHome_toDo1\\takeHomeToDoBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

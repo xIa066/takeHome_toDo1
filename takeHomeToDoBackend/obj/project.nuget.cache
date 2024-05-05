@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "0/vCNigFX3mBGFm7PKz6AKVJLxQx8dsFQeini1Ui8XGifFDdr3b1BhN6CsEdnW36V0UcM/qEslzoJg4d51ODuw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Zexi\\Development\\testTakeHome1\\takeHome_toDo1\\takeHomeToDoBackend\\takeHomeToDoBackend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Zexi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\Zexi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Zexi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\Zexi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\Zexi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\Zexi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
