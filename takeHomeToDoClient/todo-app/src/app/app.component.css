@@ -186,6 +186,30 @@ button:hover {
     font-weight: bold;
 }
 
+.error {
+    color: red;
+    /* Change color to red for error messages */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border: 1px solid red;
+    /* Highlight the border of invalid fields */
+}
+
+button:disabled {
+    background-color: #cccccc;
+    /* Gray color for disabled state */
+    color: #666666;
+    /* Dark gray text color to indicate it's not clickable */
+    cursor: not-allowed;
+    /* Cursor indicates that the button is not clickable */
+    border: 1px solid #aaaaaa;
+    /* Optional: add a border to distinguish */
+}
+
 @media (max-width: 768px) {
     .task-container {
         flex-direction: column;
